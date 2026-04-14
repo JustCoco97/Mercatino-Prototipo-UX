@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_prodotti"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="Prodotti" />
+        <item
+            android:id="@+id/nav_negozi"
+            android:icon="@drawable/ic_negozi"
+            android:title="Negozi" />
+        <item
+            android:id="@+id/nav_card"
+            android:icon="@drawable/ic_card"
+            android:title="Card" />
+        <item
+            android:id="@+id/nav_rimborsi"
+            android:icon="@drawable/ic_i_tuoi_rimborsi"
+            android:title="I tuoi rimborsi" />
+    </group>
+
+    <item android:title="Comunicazioni">
+        <menu>
+            <item
+                android:id="@+id/nav_news"
+                android:icon="@drawable/ic_news"
+                android:title="News" />
+            <item
+                android:id="@+id/nav_eco"
+                android:icon="@drawable/ic_impatto_ambientale"
+                android:title="Impatto ambientale" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

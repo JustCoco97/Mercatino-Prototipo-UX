@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0055A5"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    app:tint="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/et_cerca_prodotti"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Cerca"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CCFFFFFF"
+                    android:background="@drawable/bg_search_input"
+                    android:padding="8dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:inputType="text" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/ic_menu_sort_by_size"
+                    app:tint="#FFFFFF"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cosa" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="13sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:gravity="center" android:layout_marginTop="4dp" android:background="@drawable/bg_filter_bubble" android:textColor="#FFFFFF" android:padding="4dp" android:layout_marginHorizontal="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Regione" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="13sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:gravity="center" android:layout_marginTop="4dp" android:background="@drawable/bg_filter_bubble" android:textColor="#FFFFFF" android:padding="4dp" android:layout_marginHorizontal="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Provincia" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="13sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:gravity="center" android:layout_marginTop="4dp" android:background="@drawable/bg_filter_bubble" android:textColor="#FFFFFF" android:padding="4dp" android:layout_marginHorizontal="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distanza" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="13sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:gravity="center" android:layout_marginTop="4dp" android:background="@drawable/bg_filter_bubble" android:textColor="#FFFFFF" android:padding="4dp" android:layout_marginHorizontal="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IL TUO NEGOZIO"
+                    android:textColor="#0055A5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_nome_negozio_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mercatino Milano Centro"
+                    android:textColor="#222222"
+                    android:textSize="20sp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_cambia_negozio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#0055A5"
+                    android:text="CAMBIA NEGOZIO"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prodotti in vetrina"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
